@@ -1,7 +1,3 @@
-DROP DATABASE Ecommerce_Analytics;
-GO
-
-
 create database Ecommerce_Analytics;
 use Ecommerce_Analytics;
 
@@ -45,20 +41,6 @@ CREATE TABLE Customers (
     CustomerName VARCHAR(255),
     CustomerSegment VARCHAR(100)
 );
-
-
-
-
-USE Ecommerce_Analytics;
-
--- Total count check karne ke liye (3000 aana chahiye)
-SELECT COUNT(*) AS TotalCustomers FROM customers;
-
--- Top 5 rows dekhne ke liye
-SELECT TOP 5 * FROM customers;
-
-
-
 
 CREATE TABLE returns (
     OrderID VARCHAR(50) PRIMARY KEY,
