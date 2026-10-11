@@ -8,8 +8,6 @@ Category varchar(20),
 SubCategory varchar(50),
 Costprice decimal (10,2));
 
-
-
 create table orders(
  OrderID varchar(50) PRIMARY KEY,
     OrderDate DATE,
@@ -26,15 +24,6 @@ create table orders(
     TotalCost DECIMAL(12,2),
     Profit DECIMAL(12,2)
 );
-
-
-
-
-
-
-
-
-
 
 CREATE TABLE Customers (
     CustomerID VARCHAR(50) PRIMARY KEY,
